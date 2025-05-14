@@ -1551,18 +1551,17 @@
             <p>
               Navigating unknown environments to find a target object is a significant challenge. While semantic
               information is crucial for navigation, relying solely on it for decision-making may not always be
-              efficient, especially in environments with weak semantic cues. Additionally, many methods depend on the
-              single-frame output of an object detector for target identification, making them vulnerable to
-              misdetections, particularly in scenes with visually similar objects. To address these limitations, we
-              propose ApexNav, a zero-shot object navigation framework that is both more efficient and reliable. For
-              efficiency, we introduce an adaptive exploration strategy that alternates between semantic-based and
-              geometry-based exploration. It prioritizes semantic exploration when strong cues are available and shifts
-              to geometry-based exploration when semantic cues are weak, using geometric information to quickly gather
-              environmental data. For reliability, we propose a target-centric semantic fusion method that preserves
-              long-term memory of the target object and similar objects, reducing false detections and minimizing task
-              failures. We evaluate ApexNav on the HM3D-v0.1, HM3D-v0.2, and MP3D datasets, where it outperforms
-              state-of-the-art methods in both SR and SPL metrics. Comprehensive ablation studies further demonstrate
-              the effectiveness of each module.
+              efficient, especially in environments with weak semantic cues. Additionally, many methods are susceptible
+              to misdetections, especially in environments with visually similar objects. To address these limitations,
+              we propose ApexNav, a zero-shot object navigation framework that is both more efficient and reliable. For
+              efficiency, ApexNav adaptively utilizes semantic information by analyzing its distribution in the
+              environment, guiding exploration through semantic reasoning when cues are strong, and switching to
+              geometry-based exploration when they are weak. For reliability, we propose a target-centric semantic
+              fusion method that preserves long-term memory of the target object and similar objects, reducing false
+              detections and minimizing task failures. We evaluate ApexNav on the HM3Dv1, HM3Dv2, and MP3D datasets,
+              where it outperforms state-of-the-art methods in both SR and SPL metrics. Comprehensive ablation studies
+              further demonstrate the effectiveness of each module. Furthermore, real-world experiments validate the
+              practicality of ApexNav in physical environments.
               [<a
                 href="https://www.bilibili.com/video/BV1zvFieREM5/?spm_id_from=333.1387.homepage.video_card.click&vd_source=7d9ba13550e9ec24b6bf69d5c3ff3b37">Video</a>]
             </p>
