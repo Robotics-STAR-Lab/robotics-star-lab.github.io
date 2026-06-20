@@ -1563,8 +1563,8 @@
             </p>
             <p>
               Prof. Zhou has published papers in prestigious robotics journals and conferences, including TRO, TASE, RAL, RSS,
-              ICRA, and IROS. His team's work has been recognized with the 2023 IEEE Transactions on Robotics Best Paper
-              Award, the 2023 IEEE RAL Best Paper Award, and was a finalist for the 2024 IEEE ICRA Best Paper Award on
+              ICRA, and IROS. His team's work has been recognized with the IEEE Transactions on Robotics Best Paper
+              Award (first for an Asian institution), the IEEE RAL Best Paper Award, and was a finalist for the IEEE ICRA Best Paper Award on
               Unmanned Aerial Vehicles. His publications have been listed as popular papers in TRO and RAL, with the
               highest ranking of No. 1. He serves as an Associate Editor of IEEE TRO and is listed in Stanford's World's
               Top 2% Scientists.
@@ -1622,16 +1622,25 @@
                 position: relative;
                 width: 100%;
               }
-              .photo-wall-track {
+              .photo-wall-row {
                 display: flex;
                 gap: 15px;
-                animation: scrollWall 30s linear infinite;
                 width: fit-content;
+                margin-bottom: 15px;
               }
-              .photo-wall-container:hover .photo-wall-track {
+              .photo-wall-row:last-child {
+                margin-bottom: 0;
+              }
+              .photo-wall-row.row-1 {
+                animation: scrollLeft 30s linear infinite;
+              }
+              .photo-wall-row.row-2 {
+                animation: scrollRight 30s linear infinite;
+              }
+              .photo-wall-container:hover .photo-wall-row {
                 animation-play-state: paused;
               }
-              .photo-wall-track .photo-item {
+              .photo-wall-row .photo-item {
                 flex: 0 0 auto;
                 width: 300px;
                 height: 200px;
@@ -1640,42 +1649,49 @@
                 box-shadow: 0 4px 20px rgba(0,0,0,0.12);
                 transition: transform 0.3s;
               }
-              .photo-wall-track .photo-item:hover {
+              .photo-wall-row .photo-item:hover {
                 transform: scale(1.03);
               }
-              .photo-wall-track .photo-item img {
+              .photo-wall-row .photo-item img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 display: block;
               }
-              @keyframes scrollWall {
+              @keyframes scrollLeft {
                 0% { transform: translateX(0); }
                 100% { transform: translateX(-50%); }
+              }
+              @keyframes scrollRight {
+                0% { transform: translateX(-50%); }
+                100% { transform: translateX(0); }
               }
             </style>
 
             <div class="photo-wall-container">
-              <div class="photo-wall-track">
+              <div class="photo-wall-row row-1">
                 <div class="photo-item"><img src="./assets/imgs/home_images/swarm.png" alt="Swarm" /></div>
                 <div class="photo-item"><img src="./assets/imgs/home_images/perch.png" alt="Perch" /></div>
                 <div class="photo-item"><img src="./assets/imgs/home_images/manipulation.png" alt="Manipulation" /></div>
                 <div class="photo-item"><img src="./assets/imgs/home_images/flare.png" alt="FLARE" /></div>
                 <div class="photo-item"><img src="./assets/imgs/home_images/flyco.png" alt="FlyCo" /></div>
                 <div class="photo-item"><img src="./assets/imgs/home_images/lago.png" alt="LAGO" /></div>
+                <!-- Duplicate -->
+                <div class="photo-item"><img src="./assets/imgs/home_images/swarm.png" alt="Swarm" /></div>
+                <div class="photo-item"><img src="./assets/imgs/home_images/perch.png" alt="Perch" /></div>
+                <div class="photo-item"><img src="./assets/imgs/home_images/manipulation.png" alt="Manipulation" /></div>
+                <div class="photo-item"><img src="./assets/imgs/home_images/flare.png" alt="FLARE" /></div>
+                <div class="photo-item"><img src="./assets/imgs/home_images/flyco.png" alt="FlyCo" /></div>
+                <div class="photo-item"><img src="./assets/imgs/home_images/lago.png" alt="LAGO" /></div>
+              </div>
+              <div class="photo-wall-row row-2">
                 <div class="photo-item"><img src="./assets/imgs/home_images/onfly.png" alt="OnFly" /></div>
                 <div class="photo-item"><img src="./assets/imgs/home_images/ad-planner.png" alt="AD-Planner" /></div>
                 <div class="photo-item"><img src="./assets/imgs/home_images/airhunt.png" alt="AirHunt" /></div>
                 <div class="photo-item"><img src="./assets/imgs/home_images/image-7.png" alt="Project" /></div>
                 <div class="photo-item"><img src="./assets/imgs/home_images/image-8.png" alt="Project" /></div>
                 <div class="photo-item"><img src="./assets/imgs/home_images/image-6.png" alt="Project" /></div>
-                <!-- Duplicate for seamless loop -->
-                <div class="photo-item"><img src="./assets/imgs/home_images/swarm.png" alt="Swarm" /></div>
-                <div class="photo-item"><img src="./assets/imgs/home_images/perch.png" alt="Perch" /></div>
-                <div class="photo-item"><img src="./assets/imgs/home_images/manipulation.png" alt="Manipulation" /></div>
-                <div class="photo-item"><img src="./assets/imgs/home_images/flare.png" alt="FLARE" /></div>
-                <div class="photo-item"><img src="./assets/imgs/home_images/flyco.png" alt="FlyCo" /></div>
-                <div class="photo-item"><img src="./assets/imgs/home_images/lago.png" alt="LAGO" /></div>
+                <!-- Duplicate -->
                 <div class="photo-item"><img src="./assets/imgs/home_images/onfly.png" alt="OnFly" /></div>
                 <div class="photo-item"><img src="./assets/imgs/home_images/ad-planner.png" alt="AD-Planner" /></div>
                 <div class="photo-item"><img src="./assets/imgs/home_images/airhunt.png" alt="AirHunt" /></div>
