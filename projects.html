@@ -1547,7 +1547,185 @@
           </div>
 
           <div class="entry-content">
-            <p>
+            
+            <style>
+              .project-heading {
+                margin-top: 40px;
+                margin-bottom: 5px;
+              }
+              .project-heading h3 {
+                margin-bottom: 2px;
+                font-size: 1.3em;
+              }
+              .project-venue {
+                color: #1559ed;
+                font-size: 0.85em;
+                font-weight: 500;
+                margin-bottom: 10px;
+              }
+              .project-image {
+                margin-top: 15px;
+                margin-bottom: 15px;
+              }
+              .wp-block-image.aligncenter.size-large.is-resized img,
+              .wp-block-image.aligncenter.size-full.is-resized img {
+                max-width: 600px !important;
+                height: auto !important;
+              }
+            </style>
+
+<!-- ============ NEW PROJECTS (2025-2026) ============ -->
+
+<h3 class="project-heading">PerchRL: Vision-Based Agile Perching</h3>
+<p class="project-venue">Submitted to CoRL 2026</p>
+
+<p>
+  We propose PerchRL, a reinforcement learning framework for vision-based agile perching on inclined platforms under rapid and irregular motion. PerchRL employs a two-stage learning strategy with state-based pre-training followed by vision-based fine-tuning, using randomized platform trajectories and temporal augmentation for motion generalization. A visibility-aware state augmentation and active perception rewards are introduced to maintain robustness under intermittent visual loss caused by limited FOV. The framework achieves stable real-time perching on diverse quadrotor platforms in both simulation and real-world experiments.
+</p>
+
+<figure class="wp-block-image aligncenter size-large is-resized project-image">
+  <img decoding="async" src="./assets/imgs/projects/perchrl.png" alt="" style="max-width: 600px; height: auto;" />
+</figure>
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">AD-Planner: In-flight Payload Delivery</h3>
+<p class="project-venue">T-RO 2026</p>
+
+<p>
+  We present a systematic solution for autonomous delivery using a quadrotor with a suspended payload, covering the complete process of picking, transportation, and casting toward dynamic targets. An error-bounded planning method accounts for uncertainty to achieve accurate picking and casting. A compact optimization formulation simultaneously considers safety, feasibility, and efficiency, enabling seamless and agile delivery operations. A hierarchical initialization strategy further improves computational efficiency and solution quality.
+  [<a href="#">Paper</a>]
+</p>
+
+<figure class="wp-block-image aligncenter size-large is-resized project-image">
+  <img decoding="async" src="./assets/imgs/projects/ad_planner.png" alt="" style="max-width: 600px; height: auto;" />
+</figure>
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">Efficient and Reliable Mobile Manipulation</h3>
+<p class="project-venue">Submitted to IJRR 2026</p>
+
+<p>
+  We present a framework that synergizes efficiency and reliability for continuous mobile manipulation in complex environments. The system integrates whole-body motion planning with adaptive control, enabling seamless coordination between base mobility and arm manipulation for long-horizon tasks. A hierarchical optimization structure balances task efficiency with operational safety, allowing the robot to persistently execute manipulation tasks while adapting to environmental changes.
+</p>
+
+<figure class="wp-block-image aligncenter size-large is-resized project-image">
+  <img decoding="async" src="./assets/imgs/projects/synergizing.png" alt="" style="max-width: 600px; height: auto;" />
+</figure>
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">FlyCo: Autonomous 3D Structure Scanning</h3>
+<p class="project-venue">Submitted to IJRR 2026</p>
+
+<p>
+  We present FlyCo, a foundation model (FM)-empowered framework enabling fully autonomous, prompt-driven 3D target scanning in diverse open-world environments. FlyCo establishes a principled perception-prediction-planning loop: (1) perception fuses streaming sensor data with vision-language FMs for robust target grounding and tracking; (2) prediction distills FM knowledge with multi-modal cues to infer the complete geometry of partially observed targets; (3) planning leverages predictive foresight to generate efficient and safe scanning paths with comprehensive coverage. Real-world experiments demonstrate precise scene understanding with substantially lower human effort compared to existing paradigms.
+</p>
+
+<figure class="wp-block-image aligncenter size-large is-resized project-image">
+  <img decoding="async" src="./assets/imgs/projects/flyco.png" alt="" style="max-width: 600px; height: auto;" />
+</figure>
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">C²-Explorer: Decentralized Multi-UAV Exploration</h3>
+<p class="project-venue">IROS 2026</p>
+
+<p>
+  We present C²-Explorer, a decentralized multi-UAV exploration framework addressing the bottleneck of inadequate task representation and allocation under limited communication. The method constructs a connectivity graph to decompose disconnected unknown components into independent task units, and introduces a contiguity-driven allocation formulation with a graph-based neighborhood penalty to discourage non-adjacent assignments, promoting more contiguous task sequences over time. Extensive simulations show C²-Explorer reduces average exploration time by 43.1% and path length by 33.3% compared to SOTA baselines.
+</p>
+
+<figure class="wp-block-image aligncenter size-large is-resized project-image">
+  <img decoding="async" src="./assets/imgs/projects/c2_explorer.png" alt="" style="max-width: 600px; height: auto;" />
+</figure>
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">LAGO Policy: Smooth Robotic Manipulation</h3>
+<p class="project-venue">IROS 2026</p>
+
+<p>
+  We propose LAGO Policy, a unified asynchronous action-generation framework that integrates trajectory optimization with diffusion policy for smooth and safe manipulation. To address inter-chunk discontinuities and lack of obstacle-aware execution in prior diffusion-based policies, LAGO introduces latency-aware classifier-free guidance conditioned on future actions for improved inter-chunk consistency. It further enables goal-directed collision-free trajectory planning by predicting task-relevant interaction goals, and employs spatial-temporal trajectory optimization to refine actions for low-jerk, feasible motion. Real-world experiments demonstrate high task success across challenging manipulation tasks.
+</p>
+
+<figure class="wp-block-image aligncenter size-large is-resized project-image">
+  <img decoding="async" src="./assets/imgs/projects/lago.png" alt="" style="max-width: 600px; height: auto;" />
+</figure>
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">OnFly: Aerial Vision-Language Navigation</h3>
+<p class="project-venue">IROS 2026</p>
+
+<p>
+  We propose OnFly, a fully onboard, real-time framework for zero-shot aerial vision-language navigation (AVLN). OnFly adopts a shared-perception dual-agent architecture that decouples high-frequency target generation from low-frequency progress monitoring, stabilizing VLM-based decision-making. It further employs a hybrid keyframe-recent-frame memory to preserve global trajectory context while maintaining KV-cache prefix stability. A semantic-geometric verifier refines VLM-predicted targets using depth cues, and a receding-horizon planner generates optimized collision-free trajectories. In simulation, OnFly improves task success from 26.4% to 67.8% over the strongest SOTA baseline.
+</p>
+
+<figure class="wp-block-image aligncenter size-large is-resized project-image">
+  <img decoding="async" src="./assets/imgs/projects/onfly.png" alt="" style="max-width: 600px; height: auto;" />
+</figure>
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">Palm-sized Omnidirectional UAV Exploration</h3>
+<p class="project-venue">Submitted to RA-L 2026</p>
+
+<p>
+  We propose a palm-sized omnidirectional vision-based UAV exploration system guided by sparse topological maps. The ultra-compact form factor enables agile flight in confined and cluttered environments where larger platforms cannot operate. Omnidirectional visual sensing provides full spherical perception, while the sparse topological map framework efficiently guides exploration by maintaining a lightweight global structure for real-time path planning. This combination allows the system to achieve efficient autonomous exploration with minimal onboard sensing and computation.
+</p>
+
+<figure class="wp-block-image aligncenter size-large is-resized project-image">
+  <img decoding="async" src="./assets/imgs/projects/palm-sized.png" alt="" style="max-width: 100% !important; width: 100%; height: auto;" />
+</figure>
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">Multi-Floor Autonomous Exploration</h3>
+<p class="project-venue">Submitted to RA-L 2026</p>
+
+<p>
+  We present a multi-floor exploration framework for ground robots that addresses the challenge of navigating and exploring structured multi-level environments. The method constructs an incremental reachable graph that captures connectivity across floors, combined with structural priors (e.g., staircases, elevator shafts) to guide exploration decisions. This enables efficient traversal and complete coverage of multi-story buildings without relying on pre-existing floor plans, adapting online to the discovered environment topology.
+</p>
+
+<figure class="wp-block-image aligncenter size-large is-resized project-image">
+  <img decoding="async" src="./assets/imgs/projects/multi-floor.png" alt="" style="max-width: 100% !important; width: 100%; height: auto;" />
+</figure>
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">AirHunt: VLM-Based Aerial Object Navigation</h3>
+<p class="project-venue">Submitted to TASE 2026</p>
+
+<p>
+  We present AirHunt, an aerial object navigation system that efficiently locates open-set objects with zero-shot generalization in outdoor environments. To bridge the orders-of-magnitude frequency mismatch between VLM inference and real-time planning, AirHunt features a dual-pathway asynchronous architecture enabling continuous flight with adaptive semantic guidance. An active dual-task reasoning module exploits geometric and semantic redundancy for selective VLM querying, while a semantic-geometric coherent planning module dynamically reconciles semantic priorities with motion efficiency in a unified framework for large-scale environments.
+</p>
+
+<figure class="wp-block-image aligncenter size-large is-resized project-image">
+  <img decoding="async" src="./assets/imgs/projects/airhunt.png" alt="" style="max-width: 100% !important; width: 100%; height: auto;" />
+</figure>
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">FLARE: Fast Aerial Exploration with Active LiDAR</h3>
+<p class="project-venue">TASE 2025</p>
+
+<p>
+  We present FLARE, a fast autonomous aerial exploration framework for large-scale 3D scenarios using an actively rotated LiDAR. Unlike fixed LiDAR configurations with limited FoV, the actively rotating mechanism provides a controllable wide Field-of-View that can be dynamically oriented toward unexplored regions, significantly improving sensing coverage during flight. FLARE leverages this novel sensing paradigm with efficient frontier-based planning to achieve rapid and thorough exploration in complex large-scale environments, substantially outperforming conventional fixed-LiDAR exploration methods.
+</p>
+
+<figure class="wp-block-image aligncenter size-large is-resized project-image">
+  <img decoding="async" src="./assets/imgs/projects/flare.png" alt="" style="max-width: 600px; height: auto;" />
+</figure>
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<!-- ============ EXISTING PROJECTS ============ -->
+
+<h3 class="project-heading">ApexNav: Zero-Shot Object Navigation</h3>
+<p class="project-venue">RA-L 2025</p>
+
+<p>
               Navigating unknown environments to find a target object is a significant challenge. While semantic
               information is crucial for navigation, relying solely on it for decision-making may not always be
               efficient, especially in environments with weak semantic cues. Additionally, many methods are susceptible
@@ -1567,13 +1745,16 @@
 
             <figure class="wp-block-image aligncenter size-large is-resized">
               <img decoding="async" width="898" height="1024" src="./assets/imgs/projects/apex_nav.jpg" alt=""
-                class="wp-image-548" style="aspect-ratio: 0.876953125; width:865px; height: 380px"
+                class="wp-image-548" style="max-width: 100%; height: auto;"
                 sizes="(max-width: 898px) 100vw, 898px" />
             </figure>
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
 
-            <p>
+<h3 class="project-heading">FERMI: Flexible Radio Mapping</h3>
+<p class="project-venue">RSS 2025</p>
+
+<p>
               Communication is fundamental for multi-robot col-laboration, with accurate radio mapping playing a
               crucial role in predicting signal strength between robots. However, modeling radio signal propagation in
               large and occluded environments is challenging due to complex interactions between signals and obstacles.
@@ -1590,15 +1771,16 @@
 
             <figure class="wp-block-image aligncenter size-large is-resized">
               <img decoding="async" width="898" height="1024" src="./assets/imgs/projects/fermi.jpg" alt=""
-                class="wp-image-548" style="aspect-ratio: 0.876953125; width:565px; height: 580px"
+                class="wp-image-548" style="max-width: 100%; height: auto;"
                 sizes="(max-width: 898px) 100vw, 898px" />
             </figure>
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
 
+<h3 class="project-heading">DynamicPose: 6D Object Pose Tracking</h3>
+<p class="project-venue">IROS 2025</p>
 
-            <p>
-              We propose DynamicPose, a real-time and robust 6D object pose tracking framework that handles
+            <p>We propose DynamicPose, a real-time and robust 6D object pose tracking framework that handles
               fast-moving camera and object without retraining. To ensure accurate translation initialization, we
               introduce an efficient translation compensation mechanism that corrects Region of Interest shifts caused
               by rapid camera or object motion. Additionally, we design a VIO-guided Kalman filter with dynamically
@@ -1611,13 +1793,16 @@
 
             <figure class="wp-block-image aligncenter size-large is-resized">
               <img decoding="async" width="898" height="1024" src="./assets/imgs/projects/d_pose.jpg" alt=""
-                class="wp-image-548" style="aspect-ratio: 0.876953125; width:565px; height: 380px"
+                class="wp-image-548" style="max-width: 100%; height: auto;"
                 sizes="(max-width: 898px) 100vw, 898px" />
             </figure>
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
 
-            <p>
+<h3 class="project-heading">Perception-aware Planning in Feature-limited Environments</h3>
+<p class="project-venue">IROS 2025</p>
+
+<p>
               We propose a perception-aware planning method for quadrotor flight in unknown and
               feature-limited environments. Existing methods lack a systematic mechanism to allocate perception
               resources and efficiently integrate incrementally discovered features and unknown regions into planning,
@@ -1632,11 +1817,15 @@
 
             <figure class="wp-block-image aligncenter size-large is-resized">
               <img decoding="async" width="898" height="1024" src="./assets/imgs/projects/feat_limit_fight.png" alt=""
-                class="wp-image-548" style="aspect-ratio: 0.876953125; width:565px; height: 380px"
+                class="wp-image-548" style="max-width: 100%; height: auto;"
                 sizes="(max-width: 898px) 100vw, 898px" />
             </figure>
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">EPIC: Lightweight LiDAR-Based UAV Exploration</h3>
+<p class="project-venue">RA-L 2025</p>
+
 
             <p>
               This paper presents EPIC, a lightweight LiDAR-based framework addressing challenges in UAV autonomous
@@ -1660,7 +1849,10 @@
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
 
-            <p>
+<h3 class="project-heading">SOAR: Simultaneous Exploration and Photographing</h3>
+<p class="project-venue">IROS 2024</p>
+
+<p>
               Unmanned Aerial Vehicles (UAVs) have gained significant popularity in scene reconstruction. This paper
               presents SOAR, a LiDAR-Visual heterogeneous multi-UAV system specifically designed for fast autonomous
               reconstruction of complex environments. Our system comprises a LiDAR-equipped explorer with a large
@@ -1677,11 +1869,14 @@
             </p>
 
             <figure class="wp-block-image aligncenter size-large is-resized">
-              <img decoding="async" width="898" height="1024" src="./assets/imgs/projects/soar.gif" alt=""
-                class="wp-image-548" style="aspect-ratio: 0.876953125; width: 665px; height: 356px"
-                sizes="(max-width: 898px) 100vw, 898px" />
+              <img decoding="async" width="898" height="324" src="./assets/imgs/projects/soar.gif" alt=""
+                class="wp-image-548" style="max-width: 600px; height: auto;" />
             </figure>
 
+            <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">Star-Searcher: Autonomous Target Search</h3>
+<p class="project-venue">RA-L 2024</p>
 
             <p>
               This paper tackles the challenge of autonomous target search
@@ -1709,6 +1904,10 @@
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
 
+<h3 class="project-heading">APACE: Agile and Perception-aware Trajectory Generation</h3>
+<p class="project-venue">ICRA 2024</p>
+
+
             <p>
               Recently, we present APACE, an Agileand Perception-Aware
               trajeCtory gEneration framework for quadrotors aggressive
@@ -1727,10 +1926,14 @@
 
             <figure class="wp-block-image aligncenter size-full is-resized">
               <img decoding="async" width="440" height="294" src="./assets/imgs/projects/image-9.png" alt=""
-                class="wp-image-340" style="width: 481px; height: 322px" sizes="(max-width: 440px) 100vw, 440px" />
+                class="wp-image-340" style="width: 481px; height: auto;" sizes="(max-width: 440px) 100vw, 440px" />
             </figure>
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">Real-time Whole-body Motion Planning for Mobile Manipulators</h3>
+<p class="project-venue">ICRA 2024</p>
+
 
             <p>
               Mobile manipulators have recently gained significant attention
@@ -1746,10 +1949,14 @@
 
             <figure class="wp-block-image aligncenter size-full is-resized">
               <img decoding="async" width="571" height="439" src="./assets/imgs/projects/image-8.png" alt=""
-                class="wp-image-339" style="width: 465px; height: 357px" sizes="(max-width: 571px) 100vw, 571px" />
+                class="wp-image-339" style="width: 465px; height: auto;" sizes="(max-width: 571px) 100vw, 571px" />
             </figure>
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">FC-Planner: Skeleton-guided Aerial Coverage</h3>
+<p class="project-venue">ICRA 2024</p>
+
 
             <p>
               Recently, we propose FC-Planner, a skeleton-guided planning
@@ -1782,6 +1989,10 @@
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
 
+<h3 class="project-heading">MASSTAR: Multi-Modal Scene Dataset</h3>
+<p class="project-venue">IROS 2024</p>
+
+
             <p>
               Recently, we propose MASSTAR: a multi-modal large-scale scene
               dataset with a versatile toolchain for surface prediction and
@@ -1801,7 +2012,7 @@
                 class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-2 wp-block-group-is-layout-flex">
                 <figure class="wp-block-image size-full is-resized">
                   <img loading="lazy" decoding="async" width="457" height="433" src="./assets/imgs/projects/image-6.png"
-                    alt="" class="wp-image-334" style="width: 436px; height: 409px"
+                    alt="" class="wp-image-334" style="width: 436px; height: auto;"
                     sizes="(max-width: 457px) 100vw, 457px" />
                 </figure>
 
@@ -1809,13 +2020,17 @@
                   <figure class="wp-block-image aligncenter size-full is-resized">
                     <img loading="lazy" decoding="async" width="440" height="336"
                       src="./assets/imgs/projects/image-3.png" alt="" class="wp-image-331"
-                      style="width: 663px; height: 507px" sizes="(max-width: 440px) 100vw, 440px" />
+                      style="width: min(663px, 100%); max-width: 600px; height: auto;" sizes="(max-width: 440px) 100vw, 440px" />
                   </figure>
                 </div>
               </div>
             </div>
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">H2-Mapping: Real-time Dense Mapping</h3>
+<p class="project-venue">RA-L 2023</p>
+
 
             <p>
               Recently, we propose a NeRF-based mapping method that enables
@@ -1851,6 +2066,10 @@
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
 
+<h3 class="project-heading">AutoTrans: Autonomous UAV Payload Transportation</h3>
+<p class="project-venue">RA-L 2023</p>
+
+
             <p>
               Recently, we developed a real-time planning method for UAV
               payload system considering the time-varying shape and non-linear
@@ -1881,6 +2100,10 @@
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
 
+<h3 class="project-heading">RACER: Rapid Collaborative Multi-UAV Exploration</h3>
+<p class="project-venue">T-RO 2023</p>
+
+
             <p>
               Recently, we further develop a fully decentralized approach for
               exploration tasks using a fleet of quadrotors. The quadrotor
@@ -1910,6 +2133,9 @@
             </figure>
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+
+<h3 class="project-heading">PredRecon: Prediction-boosted Aerial Reconstruction</h3>
+<p class="project-venue">ICRA 2023</p>
 
             <p>
               Our recent work toward fully automated and highly efficient
